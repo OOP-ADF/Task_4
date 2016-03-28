@@ -3,10 +3,12 @@ Exercise on Inner Class and Threading
 
 
 Buatlah program java untuk untuk chatting antar computer sebagai berikut <br>
+---
 
 ## Package javaChat
 Package berisi kelas-kelas Socket dan Network Programming
 <b><i> [disediakan] </i></b>
+---
 
 ## Package consoleApp
 Package berisi kelas-kelas model
@@ -39,7 +41,6 @@ Buatlah class ConnectionThread.java sebagai berikut
   * tampilkan pesan kepada semua client jika ada client yang keluar dari chat room, kemudian putuskan koneksi terhadap client tsb dengan memanggil method disconnect() dari object connection <br>
   ![07] (/asset/07.JPG) <br>
   * tambahkan pesan di blok <b> catch </b> untuk menampilkan pesan error
-  
  
 ### ConsoleApplication.java
 Buatlah class ConsoleApplication.java sebagai berikut
@@ -75,7 +76,8 @@ Buatlah class ConsoleApplication.java sebagai berikut
    * Instansiasi dan jalankan Thread ReadInput dan WriteInput <br>
 	![13] (/asset/13.JPG) <br>
    * tambahkan pesan di blok <b> catch </b> untuk menampilkan pesan error
- 
+ ---
+
 ## Package chatGUI
 Package berisi kelas view GUI dan controller
 
@@ -141,7 +143,8 @@ Buatlah class JChatController.java sebagai berikut <br>
 	![26] (/asset/26.JPG) <br>
  * hapus isi dari text field pada view menggunakan method setTxFieldChat<br>
 	![27] (/asset/27.JPG) <br>
-  
+  ---
+
 ## Package driver
 Package berisi kelas-kelas model
 
@@ -155,11 +158,19 @@ Buatlah class DriverServer.java sebagai berikut
   * Jalankan thread connection<br>
 	![15] (/asset/15.JPG) <br>
   * tambahkan pesan di blok <b> catch </b> untuk menampilkan pesan error
-<b> Jalankan kelas DriverServer </b>
+  * <b> Jalankan kelas DriverServer </b>
  
-### DriverClient.java
+### DriverClientConsole.java
 Buatlah class DriverClient.java sebagai berikut
  * kelas memiliki main method (psvm)
  * instansiasi objek ConsoleApplication
  * panggil method startChat dari objek ConsoleApplication
-<b> Jalankan kelas DriverClient </b>
+ * <b> Jalankan kelas DriverClientConsole </b>
+ * hubungkan dengan IP server
+
+### DriverClientGui.java
+Buatlah class DriverClientGui.java sebagai berikut
+ * kelas memiliki main method (psvm)
+ * instansiasi objek ChatController
+ * <b> Jalankan kelas DriverClientGui </b>
+ * hubungkan dengan IP server
