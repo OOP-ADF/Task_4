@@ -21,7 +21,7 @@ Buatlah class ConnectionThread.java sebagai berikut
 	
 #### Constructor
  * Constructor throws IOException
- * Constructor mengeset attribut client dan menginstansiasi objek Connection dengan input client
+ * Constructor mengeset attribut client dan menginstansiasi objek Connection dengan input client <br>
 	![03] (/asset/03.JPG) <br>
  
 #### method run()
@@ -75,6 +75,72 @@ Buatlah class ConsoleApplication.java sebagai berikut
    * Instansiasi dan jalankan Thread ReadInput dan WriteInput <br>
 	![13] (/asset/13.JPG) <br>
    * tambahkan pesan di blok <b> catch </b> untuk menampilkan pesan error
+ 
+## Package chatGUI
+Package berisi kelas view GUI dan controller
+
+### ChatView.java
+Buatlah class JForm ChatView.java dengan tampilan sebagai berikut <br>
+![16] (/asset/16.JPG) <br>
+ * terdapat sebuah text area (txAreaChat)
+ * set editable text area = false (uncheck editable) 
+ * tambahkan text "Input Server IP Address : " pada text area<br>
+	![17] (/asset/17.JPG) <br>
+ * terdapat sebuah text field (txFieldChat)
+ * tambahkan method getTxFieldChat() yang mengembalikan objek text field txFieldChat
+ * tambahkan method getStringChat() yang mengembalikan String dari text field txFieldChat
+ * tambahkan method setTxFieldChat(String) yang mengeset String pada text field txFieldChat
+ * tambahkan method setTxAreaChat(String) yang menambahkan string pada baris baru pada text area txAreaChat	<br>
+	![18] (/asset/18.JPG) <br>
+ * import java.awt.event.ActionListener;
+ * tambahkan method addListener(ActionListener e)
+ * tambahkan add listener dengan memanggil method addActionListener pada text field txfieldChat<br>
+	![19] (/asset/19.JPG) <br>
+
+### ChatController.java
+Buatlah class JChatController.java sebagai berikut <br>
+ * buatlah class sesuai class diagram berikut <br>
+	![20] (/asset/20.JPG) <br>
+ * class ReadInput dan WriteOutput merupakan <b> Inner Class </b>
+ * import java.awt.event.ActionListener;
+ * kelas <b> implements ActionListener </b>
+ * implementasikan method actionPerformed(ActionEvent ae)
+ 
+#### Constructor ChatController
+ * Constructor mengeset menginstansiasi GUI view
+ * set visible view = true
+ * set lisener view dengan controller this
+ * set client = null <br>
+	![21] (/asset/21.JPG) <br>
+
+#### inner class WriteOutput
+ * <b> extends Thread </b>
+ * method run()
+  * lakukan proses berikut dalam blok <b> try-catch </b>
+  * Thread akan menerima pesan yang dikirimkan dari server melalui method readStream()
+  * Menampilkan pesan ke text area view selama pesan dari server masih ada (bukan null) menggunakan method setTxAreaChat <br>
+	![23] (/asset/23.JPG) <br>
+  * tambahkan pesan di blok <b> catch </b> untuk menampilkan pesan error
+ 	
+#### method actionPerformed(ActionEvent ae)
+ * get Object source action event<br>
+	![22] (/asset/22.JPG) <br>
+ * cek source action event
+ * jika event berasal dari text field (tekan tombol enter di text field), cek apakah client sudah terhubung
+ * jika client masih null
+  * lakukan proses berikut dalam blok <b> try-catch </b> 
+  * instansiasi ClientConnection baru
+  * Terima string ip dari user dengan memanggil method getStringChat dari objek view<br>
+	![24] (/asset/24.JPG) <br>
+  * Instansiasi dan jalankan objek WriteOutput<br>
+	![25] (/asset/25.JPG) <br>
+  * tambahkan pesan di blok <b> catch </b> untuk menampilkan pesan error
+ * jika client sudah terbentuk (koneksi sudah terbentuk)
+  * terima input dari view menggunakan method getStringChat()
+  * kirimkan hasil input String ke server melalui method writeStream()<br>
+	![26] (/asset/26.JPG) <br>
+ * hapus isi dari text field pada view menggunakan method setTxFieldChat<br>
+	![27] (/asset/27.JPG) <br>
   
 ## Package driver
 Package berisi kelas-kelas model
@@ -89,9 +155,11 @@ Buatlah class DriverServer.java sebagai berikut
   * Jalankan thread connection<br>
 	![15] (/asset/15.JPG) <br>
   * tambahkan pesan di blok <b> catch </b> untuk menampilkan pesan error
+<b> Jalankan kelas DriverServer </b>
  
 ### DriverClient.java
 Buatlah class DriverClient.java sebagai berikut
  * kelas memiliki main method (psvm)
  * instansiasi objek ConsoleApplication
  * panggil method startChat dari objek ConsoleApplication
+<b> Jalankan kelas DriverClient </b>
