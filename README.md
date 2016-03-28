@@ -6,7 +6,7 @@ Buatlah program java untuk untuk chatting antar computer sebagai berikut <br>
 
 ## Package javaChat
 Package berisi kelas-kelas Socket dan Network Programming
-<i> disediakan </i>
+<b><i> [disediakan] </i></b>
 
 ## Package consoleApp
 Package berisi kelas-kelas model
