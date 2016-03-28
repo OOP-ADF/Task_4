@@ -3,14 +3,14 @@ Exercise on Inner Class and Threading
 
 
 Buatlah program java untuk untuk chatting antar computer sebagai berikut <br>
----
 
 ## Package javaChat
+---
 Package berisi kelas-kelas Socket dan Network Programming
 <b><i> [disediakan] </i></b>
----
 
 ## Package consoleApp
+---
 Package berisi kelas-kelas model
 
 ### ConnectionThread.java
@@ -76,9 +76,9 @@ Buatlah class ConsoleApplication.java sebagai berikut
    * Instansiasi dan jalankan Thread ReadInput dan WriteInput <br>
 	![13] (/asset/13.JPG) <br>
    * tambahkan pesan di blok <b> catch </b> untuk menampilkan pesan error
- ---
 
 ## Package chatGUI
+ ---
 Package berisi kelas view GUI dan controller
 
 ### ChatView.java
@@ -143,9 +143,9 @@ Buatlah class JChatController.java sebagai berikut <br>
 	![26] (/asset/26.JPG) <br>
  * hapus isi dari text field pada view menggunakan method setTxFieldChat<br>
 	![27] (/asset/27.JPG) <br>
-  ---
 
 ## Package driver
+  ---
 Package berisi kelas-kelas model
 
 ### DriverServer.java
