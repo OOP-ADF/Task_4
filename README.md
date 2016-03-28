@@ -103,7 +103,7 @@ Buatlah class JForm ChatView.java dengan tampilan sebagai berikut <br>
 Buatlah class JChatController.java sebagai berikut <br>
  * buatlah class sesuai class diagram berikut <br>
 	![20] (/asset/20.JPG) <br>
- * class ReadInput dan WriteOutput merupakan <b> Inner Class </b>
+ * class WriteOutput merupakan <b> Inner Class </b>
  * import java.awt.event.ActionListener;
  * kelas <b> implements ActionListener </b>
  * implementasikan method actionPerformed(ActionEvent ae)
