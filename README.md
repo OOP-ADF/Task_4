@@ -2,7 +2,7 @@
 Exercise on Inner Class and Threading
 
 
-Buatlah program java untuk untuk chatting antar computer sebagai berikut <br>
+Buatlah program java untuk chatting antar computer sebagai berikut <br>
 
 ## Package javaChat
 ---
@@ -109,7 +109,7 @@ Buatlah class JChatController.java sebagai berikut <br>
  * implementasikan method actionPerformed(ActionEvent ae)
  
 #### Constructor ChatController
- * Constructor mengeset menginstansiasi GUI view
+ * Constructor menginstansiasi GUI view
  * set visible view = true
  * set lisener view dengan controller this
  * set client = null <br>
@@ -167,6 +167,7 @@ Buatlah class DriverClient.java sebagai berikut
  * panggil method startChat dari objek ConsoleApplication
  * <b> Jalankan kelas DriverClientConsole </b>
  * hubungkan dengan IP server
+ * cobalah aplikasi chat console yang telah dibuat
 
 ### DriverClientGui.java
 Buatlah class DriverClientGui.java sebagai berikut
@@ -174,3 +175,4 @@ Buatlah class DriverClientGui.java sebagai berikut
  * instansiasi objek ChatController
  * <b> Jalankan kelas DriverClientGui </b>
  * hubungkan dengan IP server
+ * cobalah aplikasi chat Gui yang telah dibuat
