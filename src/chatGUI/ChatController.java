@@ -63,8 +63,6 @@ public class ChatController implements ActionListener {
                 }
             }
             else {
-                WriteOutput w = new WriteOutput();
-                w.start();
                 String input = view.getStringChat();
                 client.writeStream(input);
                 view.setTxFieldChat("");
