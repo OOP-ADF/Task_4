@@ -36,13 +36,12 @@ public class ConnectionThread extends Thread {
                         + "said : " + inputan;
                 System.out.println(message);
                 connection.sendToAll(message);
-                
-                message = "Client from IP : " + connection.getIpClient()
-                        + "Quit the chat room";
-                System.out.println(message);
-                connection.sendToAll(message);
-                connection.disconnect();
             }
+            message = "Client from IP : " + connection.getIpClient()
+                        + "Quit the chat room";
+            System.out.println(message);
+            connection.sendToAll(message);
+            connection.disconnect();
         } catch (Exception e) {
             System.out.println("Ada error atau masalah teknis");
         }

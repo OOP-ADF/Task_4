@@ -5,6 +5,7 @@
  */
 package Driver;
 import javaChat.ServerConnection;
+import consoleApp.ConnectionThread;
 
 /**
  *
@@ -16,7 +17,14 @@ public class DriverServer {
             ServerConnection server = new ServerConnection();
             System.out.println("Server Information");
             System.out.println(server.getServerInformation());
+            
+            while (true) {
+                ConnectionThread connection
+                        = new ConnectionThread(server.getClient());
+                connection.start();
+            }
         } catch (Exception e) {
+            System.out.println("Ada error atau masalah teknis");
         }
     }
 }

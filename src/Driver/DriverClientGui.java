@@ -4,11 +4,14 @@
  * and open the template in the editor.
  */
 package Driver;
+import chatGUI.ChatController;
 
 /**
  *
  * @author agungrb
  */
 public class DriverClientGui {
-    
+    public static void main(String[] args) {
+        ChatController control = new ChatController();
+    }
 }

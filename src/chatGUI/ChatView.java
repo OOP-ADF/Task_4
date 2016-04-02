@@ -39,8 +39,8 @@ public class ChatView extends javax.swing.JFrame {
         txAreaChat.setRows(5);
         txAreaChat.setText("Input Server IP Address :");
         jScrollPane1.setViewportView(txAreaChat);
+        txAreaChat.getAccessibleContext().setAccessibleName("txAreaChat");
 
-        txFieldChat.setText("jTextField1");
         txFieldChat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txFieldChatActionPerformed(evt);
@@ -67,6 +67,8 @@ public class ChatView extends javax.swing.JFrame {
                 .addComponent(txFieldChat, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
                 .addContainerGap())
         );
+
+        txFieldChat.getAccessibleContext().setAccessibleName("txFieldChat");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

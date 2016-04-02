@@ -16,7 +16,7 @@ public class ConsoleApplication {
     public void startChat(){
         try {
             client = new ClientConnection();
-            System.out.println("input server IP : ");
+            System.out.print("input server IP : ");
             String ip = client.inputString();
             client.connect(ip);
             

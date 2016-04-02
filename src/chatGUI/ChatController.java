@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package chatGUI;
+
 import java.awt.event.ActionEvent;
 import javaChat.ClientConnection;
 import java.awt.event.ActionListener;
@@ -13,9 +14,10 @@ import java.awt.event.ActionListener;
  * @author agungrb
  */
 public class ChatController implements ActionListener {
+
     private ChatView view;
-    private ClientConnection client = null;
-    
+    private ClientConnection client;
+
     public ChatController() {
         view = new ChatView();
         view.setVisible(true);
@@ -26,21 +28,28 @@ public class ChatController implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
         Object source = ae.getSource();
-        try {
-            String ip = view.getStringChat();
-            client.connect(ip);
-            
-            WriteOutput w = new WriteOutput();
-            w.start();
-        } catch (Exception e) {
-            System.out.println("Ada error atau masalah teknis");
+        if (source == view.getTxFieldChat()) {
+            if (client == null) {
+                try {
+                    client = new ClientConnection();
+                    String ip = view.getStringChat();
+                    client.connect(ip);
+                    WriteOutput w = new WriteOutput();
+                    w.start();
+                } catch (Exception e) {
+                    System.out.println("Ada error atau masalah teknis");
+                }
+            }
+            else {
+                String input = view.getStringChat();
+                client.writeStream(input);
+            }
         }
-        String input = view.getStringChat();
-        client.writeStream(input);
         view.setTxFieldChat("");
     }
-    
+
     class WriteOutput extends Thread {
+
         public void run() {
             try {
                 String inputan;

@@ -4,11 +4,15 @@
  * and open the template in the editor.
  */
 package Driver;
+import consoleApp.ConsoleApplication;
 
 /**
  *
  * @author agungrb
  */
 public class DriverClientConsole {
-    
+    public static void main(String[] args) {
+       ConsoleApplication console = new ConsoleApplication();
+       console.startChat();
+    }
 }
