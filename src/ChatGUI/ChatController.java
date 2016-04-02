@@ -27,7 +27,7 @@ public class ChatController implements ActionListener {
     public void actionPerformed(ActionEvent ae){
         Object source = ae.getSource();
         try{
-            ClientConnection clientlient = new ClientConnection();
+            ClientConnection clientconnection = new ClientConnection();
             String ip = view.getStringChat();
             client.connect(ip);
             WriteOutput w = new WriteOutput();
@@ -39,6 +39,7 @@ public class ChatController implements ActionListener {
         client.writeStream(input);
         view.setTxFieldChat("");
     }
+    
     public class WriteOutput extends Thread{
         @Override
         public void run(){
