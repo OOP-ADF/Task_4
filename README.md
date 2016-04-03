@@ -82,7 +82,7 @@ Buatlah class ConsoleApplication.java sebagai berikut
 Package berisi kelas view GUI dan controller
 
 ### ChatView.java
-Buatlah class JForm ChatView.java dengan tampilan sebagai berikut <br>
+Buatlah class JFrame ChatView.java dengan tampilan sebagai berikut <br>
 ![16] (/asset/16.JPG) <br>
  * terdapat sebuah text area (txAreaChat)
  * set editable text area = false (uncheck editable) 
