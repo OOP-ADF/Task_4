@@ -8,7 +8,6 @@ package driver;
 import chatGUI.ChatController;
 
 /**
- *
  * @author Irfan Trianto
  */
 public class DriverClientGui {

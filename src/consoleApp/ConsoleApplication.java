@@ -8,7 +8,6 @@ package consoleApp;
 import java.io.IOException;
 import javaChat.ClientConnection;
 /**
- *
  * @author Irfan Trianto
  */
 public class ConsoleApplication {

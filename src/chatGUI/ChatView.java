@@ -7,7 +7,6 @@ package chatGUI;
 
 import java.awt.event.ActionListener;
 /**
- *
  * @author Irfan Trianto
  */
 public class ChatView extends javax.swing.JFrame {

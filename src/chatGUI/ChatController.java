@@ -9,7 +9,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javaChat.ClientConnection;
 /**
- *
  * @author Irfan Trianto
  */
 public class ChatController implements ActionListener {

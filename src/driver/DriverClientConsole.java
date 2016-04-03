@@ -8,7 +8,6 @@ package driver;
 import consoleApp.ConsoleApplication;
 
 /**
- *
  * @author Irfan Trianto
  */
 public class DriverClientConsole {

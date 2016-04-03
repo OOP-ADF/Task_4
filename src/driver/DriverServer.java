@@ -9,7 +9,6 @@ package driver;
 import consoleApp.ConnectionThread;
 import javaChat.ServerConnection;
 /**
- *
  * @author Irfan Trianto
  */
 public class DriverServer {
