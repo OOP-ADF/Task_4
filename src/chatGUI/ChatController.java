@@ -31,7 +31,7 @@ public class ChatController implements ActionListener {
         if (source == view.getTxFieldChat()) {
             if (client == null) {
                 try {
-                    ClientConnection client = new ClientConnection();
+                    client = new ClientConnection();
                     String ip = view.getStringChat();
                     client.connect(ip);
                     
@@ -45,8 +45,8 @@ public class ChatController implements ActionListener {
                 String input = view.getStringChat();
                 client.writeStream(input);
             }
+            view.setTxFieldChat("");
         }
-        view.setTxFieldChat("");
     }
     
     class WriteOutput extends Thread {
