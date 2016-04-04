@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  *
- * @author dee
+ * @author Andi Akhmad Fauzi, 1301144009, IF-38-09
  */
 public class Connection {
 
