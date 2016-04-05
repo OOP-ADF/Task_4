@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/Telkom%20University/Semester%204/PBO/Task%204/Task_4-1/src/chatGUI/ChatView.java</file>
+            <file>file:/D:/Telkom%20University/Semester%204/PBO/Task%204/Task_4-1/src/chatGUI/ChatController.java</file>
+            <file>file:/D:/Telkom%20University/Semester%204/PBO/Task%204/Task_4-1/src/javaChat/Connection.java</file>
+            <file>file:/D:/Telkom%20University/Semester%204/PBO/Task%204/Task_4-1/src/javaChat/ServerConnection.java</file>
+            <file>file:/D:/Telkom%20University/Semester%204/PBO/Task%204/Task_4-1/src/javaChat/ClientConnection.java</file>
+        </group>
     </open-files>
 </project-private>
