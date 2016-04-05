@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  *
- * @author dee
+ * @author Fauzan Ramadhan
  */
 public class Connection {
 
