@@ -5,12 +5,15 @@
  */
 package driver;
 
+import consoleAPP.ConsoleApplication;
+
 /**
  *
  * @author AGUNG
  */
 public class DriverClientConsole {
     public static void main(String args[]){
-        
+        ConsoleApplication consoleAPP = new ConsoleApplication();
+        consoleAPP.startChat();
     }
 }

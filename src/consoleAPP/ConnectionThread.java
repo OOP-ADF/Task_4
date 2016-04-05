@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.net.Socket;
 import javaChat.Connection;
         
-public class ConnectionThread {
+public class ConnectionThread extends Thread{
     private Socket client;
     private Connection connection;
     
@@ -23,12 +23,13 @@ public class ConnectionThread {
         connection = new Connection(client);
     }
     
-    public void run() throws IOException{ 
+    public void run(){ 
         try {
             connection.startChat("start the chat");
             System.out.println("-------------------");
             System.out.println("new client connected");
             System.out.println("client information");
+            System.out.println(connection.getClientInformation());
             
             String inputan;
             String message;
@@ -42,9 +43,9 @@ public class ConnectionThread {
                 connection.sendToAll(message);
                 connection.disconnect();
             }
-        } catch(ArrayIndexOutOfBoundsException e){
-            System.out.println("Missing argument");
-        }
+        } catch (IOException ex) {
+                System.out.println("Pesan Error");
+            }
     }
     
 }
