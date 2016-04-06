@@ -13,7 +13,7 @@ import java.net.Socket;
 
 /**
  *
- * @author dee
+ * @author friendly halomoan sipayung
  */
 public class ClientConnection {
 
