@@ -84,7 +84,7 @@ public class Connection {
                     d.flush();
                 }
             } catch (Exception e) {
-                System.out.println("error when send to all");
+                System.out.println("Error send to all");
             }
         }
     }
