@@ -13,7 +13,7 @@ import java.net.Socket;
 
 /**
  *
- * @author dee
+ * @author 1301144139 I Komang Hendra Wijaya Kusuma
  */
 public class ClientConnection {
 
