@@ -27,7 +27,7 @@ public class ChatController implements ActionListener {
     public void actionPerformed(ActionEvent ae){
         Object source = ae.getSource();
         try{
-            ClientConnection clientconnection = new ClientConnection();
+            client = new ClientConnection();
             String ip = view.getStringChat();
             client.connect(ip);
             WriteOutput w = new WriteOutput();
