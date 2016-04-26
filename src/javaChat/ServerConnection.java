@@ -16,13 +16,13 @@ import java.net.Socket;
  */
 public class ServerConnection {
 
-    private ServerSocket server;
-    private InetAddress localAddress;
-    private String host;
-    private String ipServer = "";
+    private final ServerSocket server;
+    private final InetAddress localAddress;
+    private final String host;
+    private String ipServer = "15.5.12.1";
 
     public ServerConnection() throws IOException {
-        server = new ServerSocket(4444);
+        server = new ServerSocket();
         localAddress = InetAddress.getLocalHost();
         host = localAddress.getHostName();
         byte ipAddress[] = localAddress.getAddress();
