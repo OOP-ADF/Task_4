@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaChat;
+package consoleApp;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javaChat.Connection;
 import javaChat.Connection;
 
 /**
@@ -18,11 +19,9 @@ import javaChat.Connection;
 public class ConnectionThread extends Thread{
     private Socket client;
     private Connection connection;
-    Scanner inputan = new Scanner(System.in);
-
-    public ConnectionThread(Socket client, Connection connection) throws IOException{
-        //this.client = client;
-        this.client = client;
+    
+    public ConnectionThread(Socket newClient) throws IOException {
+        this.client = newClient;
         connection = new Connection(client);
     }
     

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaChat;
+package chatGUI;
 import java.awt.event.ActionListener;
 /**
  *
@@ -17,21 +17,25 @@ public class ChatView extends javax.swing.JFrame {
     public ChatView() {
         initComponents();
     }
+
+    public void setTxAreaChat(String message) {
+        txAreaChat.append(message + "\n");
+    }
     
-    public void addListener(ActionListener e){
-        txFieldChat.addActionListener(e);
-    }
-    public void setTxAreatChat(String message){
-        txAreaChat.append(message +"\n");
-    }
-    public Object getTxFieldChat(){
+    public Object getTxFieldChat() {
         return txFieldChat;
     }
-    public String getStringChat(){
+    
+    public String getStringChat() {
         return txFieldChat.getText();
     }
-    public void setTxFieldChat(String message){
+    
+    public void setTxFieldChat(String message) {
         this.txFieldChat.setText(message);
+    }
+    
+    public void addListener(ActionListener e) {
+        txFieldChat.addActionListener(e);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -53,8 +57,6 @@ public class ChatView extends javax.swing.JFrame {
         txAreaChat.setRows(5);
         txAreaChat.setText("Input Server IP Adress : ");
         jScrollPane1.setViewportView(txAreaChat);
-
-        txFieldChat.setText("jTextField1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -80,40 +82,9 @@ public class ChatView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ChatView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ChatView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ChatView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ChatView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ChatView().setVisible(true);
-            }
-        });
-    }
+    private void txFieldChatActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+    }    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;

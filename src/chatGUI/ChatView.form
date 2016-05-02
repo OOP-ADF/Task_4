@@ -64,9 +64,6 @@
       </SubComponents>
     </Container>
     <Component class="javax.swing.JTextField" name="txFieldChat">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField1"/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>
