@@ -10,10 +10,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import javaChat.Connection;
 
 /**
  *
- * @author dee
+ * @author Rajasaurus
  */
 public class ClientConnection {
 
@@ -22,9 +23,23 @@ public class ClientConnection {
     private PrintWriter outputStream;
     final private int PORT = 4444;
     private Socket client;
+    private Connection connection;
 
+    public ClientConnection(Socket client) {
+        this.client = client;
+    }
+
+    
     public ClientConnection() {
         keyBoard = new BufferedReader(new InputStreamReader(System.in));
+    }
+    
+    public void ConnectionThread(Socket newClient) throws IOException{
+        
+    }
+    
+    public void run(){
+        
     }
 
     public void connect(String ip) throws IOException {
