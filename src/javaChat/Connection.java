@@ -22,7 +22,7 @@ import java.util.Map;
 public class Connection {
 
     private Socket client;
-    private String ipClient = "-----";
+    private String ipClient = "";
     private BufferedReader inputStream;
     private DataOutputStream outputStream;
     private InetAddress destAddress;
