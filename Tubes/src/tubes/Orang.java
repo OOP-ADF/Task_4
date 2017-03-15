@@ -10,10 +10,20 @@ package tubes;
  * @author SagabAdi
  */
 public class Orang {
+
     private String Nama;
     private String id;
-    public Orang (String Nama, String id){
+
+    public Orang(String Nama, String id) {
         this.Nama = Nama;
-        this.id   = id;
+        this.id = id;
+    }
+
+    public String getNama() {
+        return Nama;
+    }
+
+    public String getId() {
+        return id;
     }
 }

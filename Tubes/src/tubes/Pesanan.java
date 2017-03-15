@@ -11,7 +11,7 @@ package tubes;
  */
 public class Pesanan {
 
-    private String Id,Asal, Tujuan;
+    private String Id, Asal, Tujuan;
 
     public String getAsal() {
         return Asal;
@@ -36,6 +36,5 @@ public class Pesanan {
     public void setId(String Id) {
         this.Id = Id;
     }
-    
 
 }

@@ -14,16 +14,18 @@ import java.util.List;
  */
 public class Pelanggan extends Orang {
 
-    private List<Pesanan> pesanan;
+    private List<Pesanan> pesanan = new ArrayList();
     private String Nama;
     private String id;
+    private int length;
 
     public Pelanggan(String Nama, String id) {
         super(Nama, id);
-        List pesanan = new ArrayList();
+
     }
 
-    public void createPesanan(String Id,String Asal, String Tujuan) {
+    public void createPesanan(String Id, String Asal, String Tujuan) {
+
         Pesanan p = new Pesanan();
         p.setAsal(Asal);
         p.setId(Id);
@@ -32,7 +34,7 @@ public class Pelanggan extends Orang {
     }
 
     public String getNama() {
-        return Nama;
+        return super.getNama();
     }
 
     public void setNama(String Nama) {
@@ -40,7 +42,7 @@ public class Pelanggan extends Orang {
     }
 
     public String getId() {
-        return id;
+        return super.getId();
     }
 
     public void setId(String id) {
@@ -50,6 +52,10 @@ public class Pelanggan extends Orang {
     public Pesanan getPesanan(int i) {
         return pesanan.get(i);
 
+    }
+
+    public int getLength() {
+        return pesanan.size();
     }
 
 }
