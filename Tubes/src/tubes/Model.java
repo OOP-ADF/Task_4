@@ -5,21 +5,35 @@
  */
 package tubes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author SagabAdi
  */
 public class Model {
+    List<Pelanggan> pe = new ArrayList();
+    List<Pengemudi> peng = new ArrayList();
 
-    private int hasil;
-
-    public int getHasil() {
-        return hasil;
+    public Pelanggan getPe(int i) {
+        return pe.get(i);
     }
 
-    public void setHasil(int a,int b) {
-        hasil = a + b;
+    public void setPe(String a, String b) {
+        Pelanggan p = new Pelanggan (a,b);
+        pe.add(p);
     }
 
+    public Pengemudi getPeng(int i) {
+        return peng.get(i);
+    }
+
+    public void setPeng(String a, String b) {
+        Pengemudi pe = new Pengemudi(a, b);
+        peng.add(pe);
+    }
     
+    
+
 }

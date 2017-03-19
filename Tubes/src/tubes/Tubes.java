@@ -16,7 +16,7 @@ public class Tubes {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Gui g = new Gui();
+        G1 g = new G1();
         Model model = new Model();
         Controller c = new Controller(g, model);
         g.setVisible(true);
