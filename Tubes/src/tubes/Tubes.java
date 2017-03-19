@@ -5,10 +5,6 @@
  */
 package tubes;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 /**
  *
  * @author SagabAdi
@@ -20,7 +16,12 @@ public class Tubes {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Gui g = new Gui();
+        Model model = new Model();
+        Controller c = new Controller(g, model);
+        g.setVisible(true);
         AplikasiConsole apps = new AplikasiConsole();
         apps.appss();
+        
     }
 }

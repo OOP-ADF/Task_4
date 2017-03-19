@@ -109,13 +109,12 @@ public class AplikasiConsole {
                         if (pil == 1) {
                             pal = 0;
                             while (pal != 2) {
-                                System.out.print("Masukkan Id Pesanan         : ");
-                                String f = cin.nextLine();
+                                
                                 System.out.print("Masukkan Asal Keberangkatan : ");
                                 String g = cin.nextLine();
                                 System.out.print("Masukkan Tujuan             : ");
                                 String h = cin.nextLine();
-                                pe.get(i).createPesanan(f, g, h);
+                                pe.get(i).createPesanan(g, h);
                                 System.out.println("1. Tambah pesanan");
                                 System.out.println("2. Selesai");
                                 System.out.print("Masukkan Pilihan Anda :  ");
@@ -158,6 +157,12 @@ public class AplikasiConsole {
 
                 if (nemu == true) {
                     System.out.println("Login Sukses");
+                    System.out.println("1. List Pesanan ");
+                    System.out.println("2. Lihat Pesanan Ter-Accept ");
+                    System.out.println("3. Batalkan Pesanan ");
+                    System.out.println("4. Exit ");
+                    System.out.print("Masukkan Pilihan Anda :  ");
+                    pil = can.nextInt();
                     nemu = false;
                     pil = 0;
                     i = 0;

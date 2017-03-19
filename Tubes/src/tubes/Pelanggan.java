@@ -24,11 +24,10 @@ public class Pelanggan extends Orang {
 
     }
 
-    public void createPesanan(String Id, String Asal, String Tujuan) {
-
+    public void createPesanan(String Asal, String Tujuan) {
         Pesanan p = new Pesanan();
         p.setAsal(Asal);
-        p.setId(Id);
+        p.setId(Integer.toString(pesanan.size() + 1));
         p.setTujuan(Tujuan);
         pesanan.add(p);
     }
