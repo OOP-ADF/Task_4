@@ -21,7 +21,12 @@ public class Controller2 {
     public Controller2 (G2 g2, Model model,int i){
         this.g2 = g2;
         this.model = model;
-        g2.setUse(model.pe.get(i).getNama());
+        if (model.pe.get(i).getLength() >= 0){
+            for (int j = 0 ; j < model.pe.get(i).getLength() ; j ++){
+                g2.setTpesan(model.pe.get(i).getPesanan(j).getId(), model.pe.get(i).getPesanan(j).getAsal(), model.pe.get(i).getPesanan(j).getTujuan());
+            }
+        }
+        g2.setUse(model.pe.get(i).getNama(),Integer.toString(i+1));
         this.g2.addListener1(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -39,18 +44,32 @@ public class Controller2 {
         this.g2.addListener2(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int j = 0;
-                j = Integer.parseInt(g2.getBatals());
+                String j;
+                j = g2.getBatals();
                 if (model.pe.get(i).getLength() == 0){
                     JOptionPane.showMessageDialog(null, "PESANAN KOSONG !!");
                     g2.reset();
                 }
-                else if (g2.getBatals()== ""){
-                    JOptionPane.showMessageDialog(null, "Isi dengan benar!!");
-                    g2.reset();
+//                else if (g2.getBatals()== "" || (j-1 > l-1)){
+//                    JOptionPane.showMessageDialog(null, "Isi dengan benar!!");
+//                    g2.reset();
+//                }
+                else {
+                JOptionPane.showMessageDialog(null, "Pesanan Berhasil Dibatalkan");
+                g2.reset();
+                int n = 0;
+                boolean nemu = false;
+                while (nemu != true){
+                    if (model.pe.get(i).getPesanan(n).getId().equals(j)){
+                        nemu = true;
+                    }
+                    else{
+                        n++;
+                    }
                 }
-                model.pe.get(i).Removepesanan(j-1);
-                g2.removeRow(j-1);
+                model.pe.get(i).Removepesanan(n);
+                g2.removeRow(n);
+                }
             }
         });
         this.g2.addListener3(new ActionListener() {

@@ -25,9 +25,15 @@ public class Pelanggan extends Orang {
     }
 
     public void createPesanan(String Asal, String Tujuan) {
+        boolean nemu = false;
         Pesanan p = new Pesanan();
         p.setAsal(Asal);
-        p.setId(Integer.toString(pesanan.size() + 1));
+        if (pesanan.size() == 0) {
+
+            p.setId(Integer.toString(pesanan.size() + 1));
+        } else {
+            p.setId(Integer.toString(Integer.parseInt(pesanan.get(pesanan.size() - 1).getId()) + 1));
+        }
         p.setTujuan(Tujuan);
         pesanan.add(p);
     }
@@ -56,9 +62,10 @@ public class Pelanggan extends Orang {
     public int getLength() {
         return pesanan.size();
     }
-    
+
     public void Removepesanan(int i) {
         pesanan.remove(i);
+
     }
 
 }
