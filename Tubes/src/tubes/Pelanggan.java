@@ -56,5 +56,9 @@ public class Pelanggan extends Orang {
     public int getLength() {
         return pesanan.size();
     }
+    
+    public void Removepesanan(int i) {
+        pesanan.remove(i);
+    }
 
 }

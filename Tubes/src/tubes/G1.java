@@ -186,6 +186,10 @@ public class G1 extends javax.swing.JFrame {
     public String getPass() {
         return Pass.getText();
     }
+    public void reset (){
+        Nama.setText("");
+        Pass.setText("");
+    }
     
     void addListen1 (ActionListener listenbutton1){
         create.addActionListener(listenbutton1);

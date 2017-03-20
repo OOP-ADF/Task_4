@@ -51,8 +51,8 @@ public class Pengemudi extends Orang {
         return pesanan.size();
     }
 
-    public void Removepesanan() {
-
+    public void Removepesanan(int i) {
+        pesanan.remove(i);
     }
 
 }

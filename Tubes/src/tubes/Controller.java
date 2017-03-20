@@ -32,6 +32,7 @@ public class Controller {
                 b = g.getPass();
                 model.setPe(a, b);
                 JOptionPane.showMessageDialog(null, "Data Berhasil Ditambah");
+                g.reset();
                 if (g.getNama().equals(null) || g.getPass().equals(null)) {
                     JOptionPane.showMessageDialog(null, "ISI DENGAN BENAR !!");
                 }
@@ -45,6 +46,7 @@ public class Controller {
                 b = g.getPass();
                 model.setPe(a, b);
                 JOptionPane.showMessageDialog(null, "Pengemudi Berhasil Ditambah");
+                g.reset();
             }
         });
         this.g.addListen3(new ActionListener() {
@@ -70,6 +72,7 @@ public class Controller {
                     g2.setVisible(true);
                 } else {
                     JOptionPane.showMessageDialog(null, "Gagal Login");
+                    g.reset();
                 }
             }
         });
