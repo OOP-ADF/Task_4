@@ -26,7 +26,7 @@ public class Controller2 {
                 g2.setTpesan(model.pe.get(i).getPesanan(j).getId(), model.pe.get(i).getPesanan(j).getAsal(), model.pe.get(i).getPesanan(j).getTujuan());
             }
         }
-        g2.setUse(model.pe.get(i).getNama(),Integer.toString(i+1));
+        g2.setUse(model.pe.get(i).getNama(),model.pe.get(i).getPk());
         this.g2.addListener1(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

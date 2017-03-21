@@ -43,7 +43,13 @@ public class AplikasiConsole {
                 a = cin.nextLine();
                 System.out.print("Masukkan Id Anda   : ");
                 b = cin.nextLine();
-                Pelanggan p = new Pelanggan(a, b);
+                if (pe.size() == 0) {
+
+                    c = (Integer.toString(pe.size() + 1));
+                } else {
+                    c = (Integer.toString(Integer.parseInt(pe.get(pe.size() - 1).getPk()) + 1));
+                }
+                Pelanggan p = new Pelanggan(a, b, c);
                 pe.add(p);
                 System.out.println("1. Tambah Pelanggan");
                 System.out.println("2. Selesai");
@@ -54,7 +60,13 @@ public class AplikasiConsole {
                     a = cin.nextLine();
                     System.out.print("Masukkan Id Anda   : ");
                     b = cin.nextLine();
-                    Pelanggan pela = new Pelanggan(a, b);
+                    if (pe.size() == 0) {
+
+                        c = (Integer.toString(pe.size() + 1));
+                    } else {
+                        c = (Integer.toString(Integer.parseInt(pe.get(pe.size() - 1).getPk()) + 1));
+                    }
+                    Pelanggan pela = new Pelanggan(a, b, c);
                     pe.add(pela);
                     System.out.println("1. Tambah pesanan");
                     System.out.println("2. Selesai");
@@ -66,7 +78,13 @@ public class AplikasiConsole {
                 a = cin.nextLine();
                 System.out.print("Masukkan Id Anda   : ");
                 b = cin.nextLine();
-                Pengemudi pen = new Pengemudi(a, b);
+                if (peng.size() == 0) {
+
+                    c = (Integer.toString(peng.size() + 1));
+                } else {
+                    c = (Integer.toString(Integer.parseInt(peng.get(peng.size() - 1).getPk()) + 1));
+                }
+                Pengemudi pen = new Pengemudi(a, b, c);
                 peng.add(pen);
                 System.out.println("1. Tambah Pelanggan");
                 System.out.println("2. Selesai");
@@ -77,7 +95,13 @@ public class AplikasiConsole {
                     a = cin.nextLine();
                     System.out.print("Masukkan Id Anda   : ");
                     b = cin.nextLine();
-                    Pengemudi pens = new Pengemudi(a, b);
+                    if (peng.size() == 0) {
+
+                        c = (Integer.toString(peng.size() + 1));
+                    } else {
+                        c = (Integer.toString(Integer.parseInt(peng.get(peng.size() - 1).getPk()) + 1));
+                    }
+                    Pengemudi pens = new Pengemudi(a, b, c);
                     peng.add(pens);
                     System.out.println("1. Tambah pesanan");
                     System.out.println("2. Selesai");
@@ -109,7 +133,7 @@ public class AplikasiConsole {
                         if (pil == 1) {
                             pal = 0;
                             while (pal != 2) {
-                                
+
                                 System.out.print("Masukkan Asal Keberangkatan : ");
                                 String g = cin.nextLine();
                                 System.out.print("Masukkan Tujuan             : ");

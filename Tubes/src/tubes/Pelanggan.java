@@ -16,11 +16,12 @@ public class Pelanggan extends Orang {
 
     private List<Pesanan> pesanan = new ArrayList();
     private String Nama;
-    private String id;
+    private String id, pk;
+
     private int length;
 
-    public Pelanggan(String Nama, String id) {
-        super(Nama, id);
+    public Pelanggan(String Nama, String id, String pk) {
+        super(Nama, id, pk);
 
     }
 
@@ -36,6 +37,10 @@ public class Pelanggan extends Orang {
         }
         p.setTujuan(Tujuan);
         pesanan.add(p);
+    }
+
+    public String getPk() {
+        return super.getPk();
     }
 
     public String getNama() {

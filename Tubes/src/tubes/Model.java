@@ -21,7 +21,14 @@ public class Model {
     }
 
     public void setPe(String a, String b) {
-        Pelanggan p = new Pelanggan (a,b);
+        String c;
+        if (pe.size() == 0) {
+
+             c = (Integer.toString(pe.size() + 1));
+        } else {
+             c = (Integer.toString(Integer.parseInt(pe.get(pe.size() - 1).getPk()) + 1));
+        }
+        Pelanggan p = new Pelanggan (a,b,c);
         pe.add(p);
     }
 
@@ -30,7 +37,14 @@ public class Model {
     }
 
     public void setPeng(String a, String b) {
-        Pengemudi pe = new Pengemudi(a, b);
+        String c;
+        if (peng.size() == 0) {
+
+             c = (Integer.toString(peng.size() + 1));
+        } else {
+             c = (Integer.toString(Integer.parseInt(peng.get(peng.size() - 1).getPk()) + 1));
+        }
+        Pengemudi pe = new Pengemudi(a, b,c);
         peng.add(pe);
     }
     

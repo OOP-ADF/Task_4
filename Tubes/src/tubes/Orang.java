@@ -13,10 +13,16 @@ public class Orang {
 
     private String Nama;
     private String id;
+    private String pk;
 
-    public Orang(String Nama, String id) {
+    public Orang(String Nama, String id, String pk) {
         this.Nama = Nama;
         this.id = id;
+        this.pk = pk;
+    }
+
+    public String getPk() {
+        return pk;
     }
 
     public String getNama() {
