@@ -9,7 +9,7 @@ package tubes;
  *
  * @author SagabAdi
  */
-public class Orang {
+public abstract class Orang {
 
     private String Nama;
     private String id;

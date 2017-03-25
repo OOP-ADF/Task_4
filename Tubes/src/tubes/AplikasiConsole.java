@@ -49,7 +49,7 @@ public class AplikasiConsole {
                 } else {
                     c = (Integer.toString(Integer.parseInt(pe.get(pe.size() - 1).getPk()) + 1));
                 }
-                Pelanggan p = new Pelanggan(a, b, c);
+                Pelanggan p = new Pelanggan(a, b, c,(pe.size()+1));
                 pe.add(p);
                 System.out.println("1. Tambah Pelanggan");
                 System.out.println("2. Selesai");
@@ -66,7 +66,7 @@ public class AplikasiConsole {
                     } else {
                         c = (Integer.toString(Integer.parseInt(pe.get(pe.size() - 1).getPk()) + 1));
                     }
-                    Pelanggan pela = new Pelanggan(a, b, c);
+                    Pelanggan pela = new Pelanggan(a, b, c,pe.size()+1);
                     pe.add(pela);
                     System.out.println("1. Tambah pesanan");
                     System.out.println("2. Selesai");

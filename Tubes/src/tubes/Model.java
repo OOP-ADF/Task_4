@@ -28,7 +28,7 @@ public class Model {
         } else {
              c = (Integer.toString(Integer.parseInt(pe.get(pe.size() - 1).getPk()) + 1));
         }
-        Pelanggan p = new Pelanggan (a,b,c);
+        Pelanggan p = new Pelanggan (a,b,c,(pe.size()+1));
         pe.add(p);
     }
 

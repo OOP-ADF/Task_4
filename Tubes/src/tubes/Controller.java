@@ -26,15 +26,16 @@ public class Controller {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String a = null;
-                String b = null;
-                a = g.getNama();
-                b = g.getPass();
-                model.setPe(a, b);
-                JOptionPane.showMessageDialog(null, "Data Berhasil Ditambah");
-                g.reset();
-                if (g.getNama().equals(null) || g.getPass().equals(null)) {
-                    JOptionPane.showMessageDialog(null, "ISI DENGAN BENAR !!");
+                String a, b;
+                if (g.getNama().equals("") || g.getPass().equals("")) {
+                    JOptionPane.showMessageDialog(null, "Isi Dengan Benar !!");
+                    g.reset();
+                } else {
+                    a = g.getNama();
+                    b = g.getPass();
+                    model.setPe(a, b);
+                    JOptionPane.showMessageDialog(null, "Pengemudi Berhasil Ditambah");
+                    g.reset();
                 }
             }
         });
@@ -42,11 +43,16 @@ public class Controller {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String a, b;
-                a = g.getNama();
-                b = g.getPass();
-                model.setPeng(a, b);
-                JOptionPane.showMessageDialog(null, "Pengemudi Berhasil Ditambah");
-                g.reset();
+                if (g.getNama().equals("") || g.getPass().equals("")) {
+                    JOptionPane.showMessageDialog(null, "Isi Dengan Benar !!");
+                    g.reset();
+                } else {
+                    a = g.getNama();
+                    b = g.getPass();
+                    model.setPeng(a, b);
+                    JOptionPane.showMessageDialog(null, "Pengemudi Berhasil Ditambah");
+                    g.reset();
+                }
             }
         });
         this.g.addListen3(new ActionListener() {
