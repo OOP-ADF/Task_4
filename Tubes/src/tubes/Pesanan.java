@@ -11,10 +11,26 @@ package tubes;
  */
 public class Pesanan {
 
-    private String Id, Asal, Tujuan;
+    private String Id, Asal, Tujuan, Nama;
+
+    public Pesanan(String Asal, String Tujuan) {
+        this.Asal = Asal;
+        this.Tujuan = Tujuan;
+    }
+
+    public Pesanan(String id,String nama, String Asal, String Tujuan) {
+        this.Asal = Asal;
+        this.Tujuan = Tujuan;
+        this.Nama = nama;
+        this.Id = id;
+    }
 
     public String getAsal() {
         return Asal;
+    }
+
+    public String getNama() {
+        return Nama;
     }
 
     public void setAsal(String Asal) {

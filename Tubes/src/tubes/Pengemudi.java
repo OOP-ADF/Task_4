@@ -15,6 +15,7 @@ import java.util.List;
 public class Pengemudi extends Orang {
 
     private List<Pesanan> pesanan = new ArrayList();
+    private List<Kurir> kurir = new ArrayList();
     private String Nama;
     private String id, pk;
     private int length;
@@ -29,6 +30,10 @@ public class Pengemudi extends Orang {
 
     public void addPesanan(Pesanan p) {
         pesanan.add(p);
+    }
+
+    public void addKurir(Kurir k) {
+        kurir.add(k);
     }
 
     public String getNama() {
@@ -51,12 +56,24 @@ public class Pengemudi extends Orang {
         return pesanan.get(i);
     }
 
+    public Kurir getKurir(int i) {
+        return kurir.get(i);
+    }
+
     public int getLength() {
         return pesanan.size();
     }
 
+    public int getLengthk() {
+        return kurir.size();
+    }
+
     public void Removepesanan(int i) {
         pesanan.remove(i);
+    }
+
+    public void Removekurir(int i) {
+        kurir.remove(i);
     }
 
 }

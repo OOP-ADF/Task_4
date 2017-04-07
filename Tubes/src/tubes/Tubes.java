@@ -20,7 +20,7 @@ public class Tubes {
         Model model = new Model();
         Controller c = new Controller(g, model);
         g.setVisible(true);
-        AplikasiConsole apps = new AplikasiConsole();
+        AplikasiConsole apps = new AplikasiConsole(model);
         apps.appss();
         
     }

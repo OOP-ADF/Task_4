@@ -55,10 +55,8 @@ public class Controller3 {
                 }
 
                 if (nemu == true) {
-                    Pesanan p = new Pesanan();
+                    Pesanan p = new Pesanan(model.pe.get(i).getPesanan(j).getAsal(),model.pe.get(i).getPesanan(j).getTujuan());
                     p.setId(model.pe.get(i).getPesanan(j).getId());
-                    p.setAsal(model.pe.get(i).getPesanan(j).getAsal());
-                    p.setTujuan(model.pe.get(i).getPesanan(j).getTujuan());
                     model.peng.get(x).addPesanan(p);
                     JOptionPane.showMessageDialog(null, "Pesanan telah diambil");
                     g3.settterima(model.pe.get(i).getPesanan(j).getId(), model.pe.get(i).getPesanan(j).getAsal(), model.pe.get(i).getPesanan(j).getTujuan());
