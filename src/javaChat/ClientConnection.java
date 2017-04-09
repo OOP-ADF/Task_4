@@ -20,7 +20,7 @@ public class ClientConnection {
     private BufferedReader keyBoard;
     private BufferedReader inputStream;
     private PrintWriter outputStream;
-    final private int PORT = 9999;
+    final private int PORT = 4444;
     private Socket client;
 
     public ClientConnection() {

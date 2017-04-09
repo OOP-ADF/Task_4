@@ -19,7 +19,7 @@ public class ServerConnection {
     private ServerSocket serverSocket;
     private InetAddress localAddress;
     private String host;
-    private String ipServer = "xxxx.xxxx.xxxx.xxxx";
+    private String ipServer = "";
 
     public ServerConnection() throws IOException {
         serverSocket = new ServerSocket(4444);
