@@ -44,7 +44,7 @@ public class ConsoleApplication {
                     System.out.println(">> ");
                 }
             } catch (IOException ex) {
-                Logger.getLogger(ConsoleApplication.class.getName()).log(Level.SEVERE, null, ex);
+                System.out.println("Error");
             }
         }
     }
