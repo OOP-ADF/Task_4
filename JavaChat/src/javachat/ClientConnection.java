@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaChat;
+package javachat;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,11 +13,12 @@ import java.net.Socket;
 
 /**
  *
- * @author dee
+ * @author Nindia Cahyaning Putri
+ * 1301154567
+ * IF3907
  */
 public class ClientConnection {
-
-    private BufferedReader keyBoard;
+     private BufferedReader keyBoard;
     private BufferedReader inputStream;
     private PrintWriter outputStream;
     final private int PORT = 9999;
