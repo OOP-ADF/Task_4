@@ -1,4 +1,3 @@
-//Irvan Nur Apendi IF-39-12 1301154208
 package consoleApp;
 
 import java.io.IOException;
