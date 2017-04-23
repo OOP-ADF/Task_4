@@ -3,9 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ANDITYAARIFIANTO/Documents/GitHub/Task_4/src/javaChat/ClientConnection.java</file>
-            <file>file:/C:/Users/ANDITYAARIFIANTO/Documents/GitHub/Task_4/src/javaChat/ServerConnection.java</file>
-            <file>file:/C:/Users/ANDITYAARIFIANTO/Documents/GitHub/Task_4/src/javaChat/Connection.java</file>
+            <file>file:/C:/Users/Diah%20Ajeng/Documents/GitHub/Task_4/src/driver/DriverClientGui.java</file>
+            <file>file:/C:/Users/Diah%20Ajeng/Documents/GitHub/Task_4/src/driver/DriverServer.java</file>
+            <file>file:/C:/Users/Diah%20Ajeng/Documents/GitHub/Task_4/src/chatGUI/ChatController.java</file>
+            <file>file:/C:/Users/Diah%20Ajeng/Documents/GitHub/Task_4/src/consoleApp/ConnectionThread.java</file>
+            <file>file:/C:/Users/Diah%20Ajeng/Documents/GitHub/Task_4/src/chatGUI/ChatView.java</file>
+            <file>file:/C:/Users/Diah%20Ajeng/Documents/GitHub/Task_4/src/driver/DriverCllientConsole.java</file>
         </group>
     </open-files>
 </project-private>
