@@ -3,9 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ANDITYAARIFIANTO/Documents/GitHub/Task_4/src/javaChat/ClientConnection.java</file>
-            <file>file:/C:/Users/ANDITYAARIFIANTO/Documents/GitHub/Task_4/src/javaChat/ServerConnection.java</file>
-            <file>file:/C:/Users/ANDITYAARIFIANTO/Documents/GitHub/Task_4/src/javaChat/Connection.java</file>
+            <file>file:/C:/Users/Serlii%20R.%20Crusita/Documents/GitHub/Task_4/src/javaChat/DriverClientGUI.java</file>
+            <file>file:/C:/Users/Serlii%20R.%20Crusita/Documents/GitHub/Task_4/src/javaChat/ConnectionThread.java</file>
+            <file>file:/C:/Users/Serlii%20R.%20Crusita/Documents/GitHub/Task_4/src/javaChat/ChatView.java</file>
+            <file>file:/C:/Users/Serlii%20R.%20Crusita/Documents/GitHub/Task_4/src/javaChat/JChatController.java</file>
+            <file>file:/C:/Users/Serlii%20R.%20Crusita/Documents/GitHub/Task_4/src/javaChat/ConsoleApplication.java</file>
+            <file>file:/C:/Users/Serlii%20R.%20Crusita/Documents/GitHub/Task_4/src/javaChat/DriverClientConsole.java</file>
+            <file>file:/C:/Users/Serlii%20R.%20Crusita/Documents/GitHub/Task_4/src/javaChat/DriverServer.java</file>
+            <file>file:/C:/Users/Serlii%20R.%20Crusita/Documents/GitHub/Task_4/src/javaChat/ServerConnection.java</file>
+            <file>file:/C:/Users/Serlii%20R.%20Crusita/Documents/GitHub/Task_4/src/javaChat/ClientConnection.java</file>
+            <file>file:/C:/Users/Serlii%20R.%20Crusita/Documents/GitHub/Task_4/src/javaChat/Connection.java</file>
         </group>
     </open-files>
 </project-private>
