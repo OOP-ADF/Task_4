@@ -47,7 +47,4 @@ public class Model {
         Pengemudi pe = new Pengemudi(a, b,c);
         peng.add(pe);
     }
-    
-    
-
 }
