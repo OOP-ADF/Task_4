@@ -48,12 +48,6 @@ public class AplikasiConsole {
                 a = cin.nextLine();
                 System.out.print("Masukkan Id Anda   : ");
                 b = cin.nextLine();
-                if (model.pe.size() == 0) {
-
-                    c = (Integer.toString(model.pe.size() + 1));
-                } else {
-                    c = (Integer.toString(Integer.parseInt(model.pe.get(model.pe.size() - 1).getPk()) + 1));
-                }
                 model.setPe(a, b);
                 System.out.println("1. Tambah Pelanggan");
                 System.out.println("2. Selesai");
@@ -64,12 +58,6 @@ public class AplikasiConsole {
                     a = cin.nextLine();
                     System.out.print("Masukkan Id Anda   : ");
                     b = cin.nextLine();
-                    if (model.pe.size() == 0) {
-
-                        c = (Integer.toString(model.pe.size() + 1));
-                    } else {
-                        c = (Integer.toString(Integer.parseInt(model.pe.get(model.pe.size() - 1).getPk()) + 1));
-                    }
                     model.setPe(a, b);
                     System.out.println("1. Tambah pesanan");
                     System.out.println("2. Selesai");
@@ -81,12 +69,6 @@ public class AplikasiConsole {
                 a = cin.nextLine();
                 System.out.print("Masukkan Id Anda   : ");
                 b = cin.nextLine();
-                if (model.peng.size() == 0) {
-
-                    c = (Integer.toString(model.peng.size() + 1));
-                } else {
-                    c = (Integer.toString(Integer.parseInt(model.peng.get(model.peng.size() - 1).getPk()) + 1));
-                }
                 model.setPeng(a, b);
                 System.out.println("1. Tambah Pelanggan");
                 System.out.println("2. Selesai");
@@ -203,7 +185,6 @@ public class AplikasiConsole {
                                     model.pe.get(i).Removekurir(n);
                                 }
                             }
-
                         } else if (pil == 6) {
                             for (int j = 0; j < model.pe.get(i).getLengthk(); j++) {
                                 System.out.println(j + 1 + ".Id Kurir    : " + model.pe.get(i).getKurir(j).getId());

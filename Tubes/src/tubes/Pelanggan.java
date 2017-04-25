@@ -52,6 +52,14 @@ public class Pelanggan extends Orang {
 
     }
 
+    public void setPesanan(List<Pesanan> pesanan) {
+        this.pesanan = pesanan;
+    }
+
+    public void setKurir(List<Kurir> kurir) {
+        this.kurir = kurir;
+    }
+
     public String getPk() {
         return super.getPk();
     }
