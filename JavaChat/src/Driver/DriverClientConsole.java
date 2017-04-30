@@ -5,6 +5,8 @@
  */
 package Driver;
 
+import ConsoleApp.ConsoleApplication;
+
 /**
  *
  * @author Nindia Cahyaning Putri
@@ -12,5 +14,8 @@ package Driver;
  * IF3907
  */
 public class DriverClientConsole {
-    
+    public static void main(String[] args) {
+        ConsoleApplication consoleA = new ConsoleApplication();
+        consoleA.StarChat();
+    }
 }

@@ -5,6 +5,8 @@
  */
 package Driver;
 
+import ChatGUI.JChatController;
+
 /**
  *
  * @author Nindia Cahyaning Putri
@@ -12,5 +14,8 @@ package Driver;
  * IF3907
  */
 public class DriverClientGUI {
-    
+    public static void main(String[] args) {
+        JChatController Jchat = new JChatController();
+    }
 }
+// selesaiiiiiiiiiii

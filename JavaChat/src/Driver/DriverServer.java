@@ -5,6 +5,10 @@
  */
 package Driver;
 
+import ConsoleApp.ConnectionThread;
+import javachat.ServerConnection;
+import java.io.IOException;
+
 /**
  *
  * @author Nindia Cahyaning Putri 
@@ -12,5 +16,21 @@ package Driver;
  * IF3907
  */
 public class DriverServer {
-    
+    public static void main(String[] args) {
+        try{
+            ServerConnection serverc = new ServerConnection();
+            System.out.println("Server Information");
+            System.out.println(serverc.getServerInformation());
+            //
+            while(true){
+                ConnectionThread connectionT = new ConnectionThread(serverc.getClient());
+                connectionT.run();
+                
+            }
+            
+        }
+        catch (IOExpection E){
+            System.out.println("error");
+        }
+    }
 }
