@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaChat;
+package javachat;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -14,14 +14,14 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  *
- * @author dee
+ * @author Nindia Cahyaning Putri
+ * 1301154567
+ * IF3907
  */
 public class Connection {
-
-    private Socket client;
+     private Socket client;
     private String ipClient = "";
     private BufferedReader inputStream;
     private DataOutputStream outputStream;

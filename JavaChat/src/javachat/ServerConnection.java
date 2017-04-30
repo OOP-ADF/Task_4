@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaChat;
+package javachat;
 
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-
 /**
  *
- * @author dee
+ * @author Nindia Cahyaning Putri
+ * 1301154567
+ * IF3907
  */
 public class ServerConnection {
-
     private ServerSocket serverSocket;
     private InetAddress localAddress;
     private String host;
@@ -43,3 +43,5 @@ public class ServerConnection {
     }
 
 }
+    
+
