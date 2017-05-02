@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package chatGUI;
 
 import java.awt.event.ActionEvent;
@@ -26,7 +21,7 @@ public class ChatController implements ActionListener {
         view = new ChatView();
         view.setVisible(true);
         view.addListener(this);
-        client = null;  
+        client = null;
     }
 
     @Override
@@ -54,7 +49,6 @@ public class ChatController implements ActionListener {
     }
 
     public class WriteOutput extends Thread {
-
         public void run() {
             try {
                 String inp;
@@ -66,4 +60,5 @@ public class ChatController implements ActionListener {
             }
         }
     }
+    
 }

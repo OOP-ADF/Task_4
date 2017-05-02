@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package consoleApp;
 
 import java.io.IOException;
@@ -16,6 +11,7 @@ import javaChat.Connection;
  * @author Diah Ajeng
  */
 public class ConnectionThread {
+    
     private Socket client;
     private Connection connection;
    
@@ -24,7 +20,7 @@ public class ConnectionThread {
         connection = new Connection(client);
     }
     
-    public void run () {
+    public void run(){
         try {
             connection.startChat("Strat the Chat-----");
             System.out.println("-----------");
@@ -46,4 +42,5 @@ public class ConnectionThread {
             System.out.println("ERROR");
         }
     }
+    
 }

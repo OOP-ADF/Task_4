@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package driver;
 
 import consoleApp.ConnectionThread;
@@ -16,6 +11,7 @@ import javaChat.ServerConnection;
  * @author Diah Ajeng
  */
 public class DriverServer {
+    
     public static void main(String[] args) {
         try {
             ServerConnection server = new ServerConnection();
@@ -26,7 +22,8 @@ public class DriverServer {
                 connection.run();
             }
         } catch (IOException ex) {
-            System.out.println("Error");
+            System.out.println("Error.");
         }
     }
+    
 }
