@@ -5,9 +5,11 @@
  */
 package chatGUI;
 
+import java.awt.event.ActionListener;
+
 /**
  *
- * @author Ncisl
+ * @author lailis
  */
 public class ChatView extends javax.swing.JFrame {
 
@@ -27,22 +29,62 @@ public class ChatView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txAreaChat = new javax.swing.JTextArea();
+        txFieldChat = new javax.swing.JTextField();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        txAreaChat.setEditable(false);
+        txAreaChat.setColumns(20);
+        txAreaChat.setRows(5);
+        txAreaChat.setText("Input Server IP Address");
+        jScrollPane1.setViewportView(txAreaChat);
+
+        txFieldChat.setText("jTextField1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+                    .addComponent(txFieldChat))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(txFieldChat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    public void setTxAreaCaht(String Message) {
+        txAreaChat.append(Message + "\n");
+    }
+       
+    public Object getTextField() {
+        return txFieldChat;
+    }
+    
+    public String getStringChat() {
+        return txFieldChat.getText();
+    }
+    
+    public void setTextFieldChat(String Message) {
+        this.txFieldChat.setText(Message);
+    }
+    
+    public void addListener (ActionListener e){
+        txFieldChat.addActionListener(e);
+    }
     /**
      * @param args the command line arguments
      */
@@ -79,5 +121,8 @@ public class ChatView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea txAreaChat;
+    private javax.swing.JTextField txFieldChat;
     // End of variables declaration//GEN-END:variables
 }
