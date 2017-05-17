@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author Christian Janifer
+ * @author Guntur Fatmawan
  */
 public class ChatView extends javax.swing.JFrame {
 

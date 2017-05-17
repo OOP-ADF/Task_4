@@ -8,7 +8,7 @@ import javax.swing.text.View;
 
 /**
  *
- * @author Christian Janifer
+ * @author Guntur Fatmawan
  */
 public class JChatController implements ActionListener{
    
