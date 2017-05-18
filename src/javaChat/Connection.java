@@ -12,8 +12,6 @@ import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  *
@@ -27,21 +25,7 @@ public class Connection {
     private DataOutputStream outputStream;
     private InetAddress destAddress;
     private static ArrayList<Socket> list = new ArrayList<>();
-//    private static Map<String, DataOutputStream> users = new HashMap<>();
-
-//    public Connection(Socket client, String username) throws IOException {
-//        this.client = client;
-//        inputStream = new BufferedReader(new InputStreamReader(client.getInputStream()));
-////        outputStream = new DataOutputStream(client.getOutputStream());
-//        users.put(username, new DataOutputStream(client.getOutputStream()));
-//
-//        destAddress = this.client.getInetAddress();
-//        byte ipAddress[] = destAddress.getAddress();
-//        for (int i = 0; i < ipAddress.length; ++i) {
-//            ipClient += String.valueOf((ipAddress[i] + 256) % 256) + ".";
-//        }
-//    }
-
+    
     public Connection(Socket client) throws IOException {
         this.client = client;
         list.add(client);
