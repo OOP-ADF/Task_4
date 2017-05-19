@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  *
- * @author dee
+ * @author GL552JX
  */
 public class Connection {
 
