@@ -3,9 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ANDITYAARIFIANTO/Documents/GitHub/Task_4/src/javaChat/ClientConnection.java</file>
-            <file>file:/C:/Users/ANDITYAARIFIANTO/Documents/GitHub/Task_4/src/javaChat/ServerConnection.java</file>
-            <file>file:/C:/Users/ANDITYAARIFIANTO/Documents/GitHub/Task_4/src/javaChat/Connection.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/Task_4/src/javaChat/ServerConnection.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/Task_4/src/javaChat/ClientConnection.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/Task_4/src/driver/DriverServer.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/Task_4/src/consoleApp/ConsoleApplication.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/Task_4/src/driver/DriverClientGUI.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/Task_4/src/consoleApp/connectionthread.java</file>
+            <file>file:/C:/Users/ASUS/Documents/GitHub/Task_4/src/driver/DriverClientConsole.java</file>
         </group>
     </open-files>
 </project-private>
